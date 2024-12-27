@@ -15,7 +15,8 @@ public class Attendance {
     private Long id;
 
     private Long employeeId;
-
+    private Double latitude;
+    private Double longitude;
     private LocalDateTime timestamp;
     private String action;
 }
