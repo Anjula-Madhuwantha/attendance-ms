@@ -17,9 +17,10 @@ public class AttendanceServiceImpl implements AttendanceService {
 
     @Autowired
     private AttendanceRepository attendanceRepository;
+//6.921945605904505, 79.97159328587993
 
-    private static final Double officeLatitude = 6.921094880435183;
-    private static final Double officeLongitude = 79.9746034254462;
+    private static final Double officeLatitude = 6.9219016;
+    private static final Double officeLongitude = 79.9716752;
     private static final Double allowRadius = 0.01;
 
     @Override
