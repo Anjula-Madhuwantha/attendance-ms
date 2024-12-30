@@ -10,7 +10,7 @@ import java.util.List;
 public interface AttendanceRepository extends JpaRepository<Attendance, Long> {
 
     @Query("SELECT a FROM Attendance a WHERE a.employeeId = :employeeId AND DATE(a.timestamp) = :date AND a.action = :action")
-    List<Attendance> findByEmployeeIdAndTimestampDate(Long employeeId, LocalDate date, String action);
+    List<Attendance> findByEmployeeIdAndTimestampDate(String employeeId, LocalDate date, String action);
 
     @Query("SELECT a FROM Attendance a WHERE DATE(a.timestamp) BETWEEN :startDate AND :endDate AND a.action = :action")
     List<Attendance> findByDateRangeAndAction(LocalDate startDate, LocalDate endDate, String action);

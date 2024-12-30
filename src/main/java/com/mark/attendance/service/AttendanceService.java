@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public interface AttendanceService {
 
-    String recordAttendance(Long employeeId, Double latitude, Double longitude, String action);
+    String recordAttendance(String employeeId, Double latitude, Double longitude, String action);
 
     List<Attendance> getAttendanceByAction(LocalDate startDate, LocalDate endDate, String action);
 }

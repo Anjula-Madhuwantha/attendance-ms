@@ -29,7 +29,7 @@ public class AttendanceController {
 
         return attendanceService.recordAttendance(checkInRequest.getEmployeeId(),
                 checkInRequest.getLatitude(),
-                checkInRequest.getLongitude(), 
+                checkInRequest.getLongitude(),
                 "Check-Out");
     }
 

@@ -17,14 +17,13 @@ public class AttendanceServiceImpl implements AttendanceService {
 
     @Autowired
     private AttendanceRepository attendanceRepository;
-//6.921945605904505, 79.97159328587993
 
-    private static final Double officeLatitude = 6.9219016;
-    private static final Double officeLongitude = 79.9716752;
+    private static final Double officeLatitude = 6.9211147;
+    private static final Double officeLongitude = 79.9746109;
     private static final Double allowRadius = 0.01;
 
     @Override
-    public String recordAttendance(Long employeeId, Double latitude, Double longitude, String action) {
+    public String recordAttendance(String employeeId, Double latitude, Double longitude, String action) {
 
         if (latitude == null || longitude == null) {
             return "Invalid location data. Please provide valid latitude and longitude.";
